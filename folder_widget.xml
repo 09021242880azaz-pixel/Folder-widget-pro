@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/folder_widget_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/widget_background_round">
+
+    <TextView
+        android:id="@+id/folder_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Folder"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:paddingBottom="6dp"
+        android:maxLines="1" />
+
+    <GridView
+        android:id="@+id/folder_grid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="3"
+        android:horizontalSpacing="4dp"
+        android:verticalSpacing="4dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/folder_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="پوشه خالی است؛ برنامه‌ها را انتخاب کن"
+        android:textColor="#DDFFFFFF"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:padding="4dp" />
+</LinearLayout>
